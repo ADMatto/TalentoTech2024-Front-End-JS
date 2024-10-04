@@ -1,41 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UFT-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UFT-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Shop Kawaii</title>
 </head>
+<link rel="icon" href="img/webicon.ico">
 <!-- Cuerpo de la pagina -->
+<!-- Clase 1: Estructura básica - Crear la estructura básica del proyecto, incluyendo las etiquetas <header>, <main>, <nav> y <footer>.
+    Dentro de <header>, incluye un título <h1> con el nombre del proyecto. -->
 <body>
     <!-- Encabezado de la pagina -->
     <header>
+        <!-- Logo -->
+        <img src="img/logo.webp" height="100">
 
+        <h1>Tienda de regalos</h1>
+        <!-- Clase 2: Lista de navegación
+            1 - Crear una barra de navegación usando la etiqueta <nav>.
+            2 - El <nav> debe contener una lista desordenada <ul> con item list y enlaces.
+
+            Ejemplo: "Inicio", "Productos",”Reseñas”, "Contacto".
+
+            Estos enlaces deberán simular una navegación interna en la página. -->
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contactanos</a></li>
+            </ul>
+        </nav>
     </header>
     <!-- Contenido principal -->
+    <!-- -En desarrollo- Clase 2: Imagen, video y audio
+    1 - Insertar una imagen en el <header> para representar el logo del proyecto.
+    2 - Insertar una imagen y un iframe o video representativo en una <section> dentro del <main>.
+    Asegurarse de agregar atributos alt para la imagen y subtítulos para el video. -->
     <main>
-    <section id="contacto">
-        <form>
-            <label for="nombreCont">Nombre
-                <input type="text" name="nombre" id="nombreCont" placeholder="Nombre y Apellido">
-            </label>
-            <label></label>
-            <select id="provinciaCont">
-                <option selected>Ciudad Autonoma de Buenos Aires</option>
-                <option>Buenos Aires</option>
-                <option>Cordoba</option>
-                <option>Mendoza</option>
-            </select>
-            <label for="emailCont">Email de contacto:
-                <input type="email" name="email" id="emailCont" placeholder="name.apellido@provider.com">
-            </label>
-        </form>
-
-    </section>
+        <section id="inicio">
+            <audio controls loop>
+                <source src="audio/kiki's delivery service - umi no mieru machi.mp3" type="audio/mp3" alt="ghibli music">
+                Tu navegador no soporta este formato de audio
+            </audio>
+            <h3>Bienvenido a la tienda de regalos Gift Shop Kawaii</h3>
+            <p>Contamos con envio gratis a todo CABA con compras mayores a $50.000</p>
+            <video controls autoplay loop alt="tienda totoro">
+                <source src="video/tienda.mp4" type="video/mp4">
+                <track src="sub/tienda.vtt" kind="subtitles" srclang="jp" label="Japanese">
+            </video>
+        </section>
+        <section id="productos">
+            <h2>Productos</h2>
+            <div>
+                <h3>Peluche Totoro gris</h3>
+                <img src="img/totoro1.jpg">
+                <p><small>sku: t21</small></p>
+                <p>Precio: <b>$15.000</b></p>
+            </div>
+            <div>
+                <h3>Peluche Totoro celeste</h3>
+                <img src="img/totoro2.jpg">
+                <p><small>sku: t21</small></p>
+                <p>Precio: <b>$13.000</b></p>
+            </div>
+            <div>
+                <h3>Peluche Totoro blanco</h3>
+                <img src="img/totoro3.jpg">
+                <p><small>sku: t21</small></p>
+                <p>Precio: <b>$12.000</b></p>
+            </div>
+            <div>
+                <h3>Peluche Kiki</h3>
+                <img src="img/kiki1.jpg">
+                <p><small>sku: t21</small></p>
+                <p>Precio: <b>$12.000</b></p>
+            </div>
+        </section>
+        <section id="reseñas">
+            <h3>Reseñas</h3>
+            <p>52 reseñas</p>
+            <img src="img/review.png" height="20">
+            <p>Florencia Sanches:<br>
+                Todo muy cute!! quiero todo!!</p>
+            <p>Juan Perez:<br>
+                Super recomendado 10/10!</p>
+            <p><b>cargar mas ></b></p>
+        </section>
     </main>
     <!-- Pie de pagina -->
     <footer>
-
+        <p>----------------------Footer----------------------</p>
+        <section id="contacto">
+            <h3>Contactanos</h3>
+            <form>
+                <label for="nombreCont">Nombre:
+                    <input type="text" name="nombre" id="nombreCont" placeholder="Nombre y Apellido">
+                </label>
+                <br>
+                <label for="provinciaCont">Provincia:
+                    <select id="provinciaCont">
+                        <option selected>Ciudad Autonoma de Buenos Aires</option>
+                        <option>Buenos Aires</option>
+                        <option>Cordoba</option>
+                        <option>Mendoza</option>
+                    </select>
+                </label>
+                <br>
+                <label for="emailCont">Email de contacto:
+                    <input type="email" name="email" id="emailCont" placeholder="name.apellido@provider.com">
+                </label>
+            </form>
+            <p>Creado por: Adrian Matto</p>
+        </section>
     </footer>
 </body>
 </html>
