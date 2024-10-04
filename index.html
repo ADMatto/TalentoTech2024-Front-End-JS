@@ -3,8 +3,9 @@
 <head>
     <meta charset="UFT-8" http-equiv="X-UA-Compatible" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gift Shop Kawaii</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<link rel="icon" href="img/webicon.ico">
+<link rel="icon" href="images/webicon.ico">
 <!-- Cuerpo de la pagina -->
 <!-- Clase 1: Estructura básica - Crear la estructura básica del proyecto, incluyendo las etiquetas <header>, <main>, <nav> y <footer>.
     Dentro de <header>, incluye un título <h1> con el nombre del proyecto. -->
@@ -12,7 +13,7 @@
     <!-- Encabezado de la pagina -->
     <header>
         <!-- Logo -->
-        <img src="img/logo.webp" height="100">
+        <img data-src="logo.webp" height="100">
 
         <h1>Tienda de regalos</h1>
         <!-- Clase 2: Lista de navegación
@@ -46,32 +47,32 @@
             <p>Contamos con envio gratis a todo CABA con compras mayores a $50.000</p>
             <video controls autoplay loop alt="tienda totoro">
                 <source src="video/tienda.mp4" type="video/mp4">
-                <track src="sub/tienda.vtt" kind="subtitles" srclang="jp" label="Japanese">
+                <track src="subtitles/tienda.vtt" kind="subtitles" srclang="jp" label="Japanese">
             </video>
         </section>
         <section id="productos">
             <h2>Productos</h2>
             <div>
                 <h3>Peluche Totoro gris</h3>
-                <img src="img/totoro1.jpg">
+                <img data-src="totoro1.jpg">
                 <p><small>sku: t21</small></p>
                 <p>Precio: <b>$15.000</b></p>
             </div>
             <div>
                 <h3>Peluche Totoro celeste</h3>
-                <img src="img/totoro2.jpg">
+                <img data-src="totoro2.jpg">
                 <p><small>sku: t21</small></p>
                 <p>Precio: <b>$13.000</b></p>
             </div>
             <div>
                 <h3>Peluche Totoro blanco</h3>
-                <img src="img/totoro3.jpg">
+                <img data-src="totoro3.jpg">
                 <p><small>sku: t21</small></p>
                 <p>Precio: <b>$12.000</b></p>
             </div>
             <div>
                 <h3>Peluche Kiki</h3>
-                <img src="img/kiki1.jpg">
+                <img data-src="kiki1.jpg">
                 <p><small>sku: t21</small></p>
                 <p>Precio: <b>$12.000</b></p>
             </div>
@@ -79,7 +80,7 @@
         <section id="reseñas">
             <h3>Reseñas</h3>
             <p>52 reseñas</p>
-            <img src="img/review.png" height="20">
+            <img data-src="review.png" height="20">
             <p>Florencia Sanches:<br>
                 Todo muy cute!! quiero todo!!</p>
             <p>Juan Perez:<br>
@@ -113,5 +114,6 @@
             <p>Creado por: Adrian Matto</p>
         </section>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
