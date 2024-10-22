@@ -1,3 +1,40 @@
-h1{
-    color:pink;
+header {
+    color: pink;
+    font-family: "Roboto", sans-serif;
+    background-color: #789DBC;
+}
+footer {
+    color: blue;
+    background-color: #C9E9D2;
+}
+#inicio {
+    background-color: #FFE3E3;
+}
+#productos div{
+    background-image: url("../images/shop-background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #FEF9F2;
+    margin-bottom: 50px;
+}
+#productos img {
+    border: 15px solid #FFE3E3;
+}
+#reseñas {
+    background-color: #FFE3E3;
+}
+.nav-list {
+    list-style: none;
+}
+.nav-list a {
+    text-decoration: none;
+    color: pink;
+    font-size: 30px;
+}
+main {
+    font-family: "Roboto", sans-serif;
+}
+div.productos{
+    display: flex;
+    flex-wrap: wrap;
 }
