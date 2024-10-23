@@ -19,6 +19,7 @@ footer {
 }
 #productos img {
     border: 15px solid #FFE3E3;
+    margin-right: 15px;
 }
 #reseñas {
     background-color: #FFE3E3;
@@ -37,4 +38,13 @@ main {
 div.productos{
     display: flex;
     flex-wrap: wrap;
+}
+div.producto p {
+    display: inline;
+    max-width: 300px;
+}
+
+div.descripcion {
+    display: flex;
+    align-items: top;
 }
