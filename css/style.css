@@ -11,9 +11,7 @@ footer {
     background-color: #FFE3E3;
 }
 #productos div{
-    background-image: url("../images/shop-background.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
+
     background-color: #FEF9F2;
     margin-bottom: 50px;
 }
@@ -38,13 +36,19 @@ main {
 div.productos{
     display: flex;
     flex-wrap: wrap;
-}
-div.producto p {
-    display: inline;
-    max-width: 300px;
+    margin: 50px;
+    padding: 0px 20px 0px 20px;
 }
 
-div.descripcion {
-    display: flex;
-    align-items: top;
+p.sku {
+    font-size: smaller;
+    font-style: italic;
+    font-weight: 800;
+}
+p.precio {
+    font-weight: 200;
+}
+div.producto{
+    flex-direction: column;
+    text-align: center;
 }
