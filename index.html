@@ -46,6 +46,7 @@
     Asegurarse de agregar atributos alt para la imagen y subtítulos para el video. -->
     <main>
         <section id="inicio">
+            <p>Escucha musica y sientete dentro de una pelicula de Ghibli!</p>
             <audio controls loop>
                 <source src="audio/kiki's delivery service - umi no mieru machi.mp3" type="audio/mp3"
                     alt="ghibli music">
@@ -85,43 +86,100 @@
                     <p class="sku">sku: k01</p>
                     <p class="precio">Precio: $12.000</p>
                 </div>
+                <div class="producto">
+                    <h3>Peluche Gatobus de Totoro</h3>
+                    <img data-src="buscat1.jpg">
+                    <p class="sku">sku: t04</p>
+                    <p class="precio">Precio: $12.000</p>
+                </div>
+                <div class="producto">
+                    <h3>Peluche Faceless de Viaje de Chihiro</h3>
+                    <img data-src="faceless1.jpg">
+                    <p class="sku">sku: c01</p>
+                    <p class="precio">Precio: $12.000</p>
+                </div>
+                <div class="producto">
+                    <h3>Peluche Calcifer de Castillo Vagabundo</h3>
+                    <img data-src="calsifer1.jpg">
+                    <p class="sku">sku: h01</p>
+                    <p class="precio">Precio: $12.000</p>
+                </div>
+                <div class="producto">
+                    <h3>Peluche Ratita de Viaje de Chihiro</h3>
+                    <img data-src="chihiro2.jpg">
+                    <p class="sku">sku: c02</p>
+                    <p class="precio">Precio: $17.000</p>
+                </div>
             </div>
         </section>
         <section id="reseñas">
             <h3>Reseñas</h3>
             <p>52 reseñas</p>
             <img data-src="review.png" height="20">
-            <p>Florencia Sanches:<br>
-                Todo muy cute!! quiero todo!!</p>
-            <p>Juan Perez:<br>
-                Super recomendado 10/10!</p>
+            <div class="grid-container">
+                <div class="reseña">
+                    <p>Florencia Sanches:<br>
+                        "Todo muy cute!! quiero todo!!" ⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+                <div class="reseña">
+                    <p>Juan Perez:<br>
+                        "Super recomendado 10/10!" ⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+                <div class="reseña">
+                    <p>Maria Levis:<br>
+                        "Me llego el peluche de totoro y supero mis espectativas!" ⭐️⭐️⭐️⭐️⭐️</p>
+                </div class="reseña">
+                <div class="reseña">
+                    <p>Alejandro Rodriguez<br>
+                    "El Totoro Abrazable es perfecto compañero de siestas y secretos. Suaves y reconfortantes abrazos garantizados." ⭐️⭐️⭐️⭐️⭐️
+                    </p>
+                </div>
+                <div class="reseña">
+                    <p>Julio Rondan<br>
+                        "El Calcifer Llamita Vivaz se siente el calorcito en tus manos, chispeante y siempre animado. ¡Un encanto único!" ⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+                <div class="reseña">
+                    <p>Gabriel Burgos<br>
+                        "El Gatobus Aventura listo para cualquier viaje imaginario. Su carita es pura alegría." ⭐️⭐️⭐️⭐️⭐️</p>
+                </div>
+                <div class="reseña">
+                    <p>David Arganaraz<br>
+                        "El Kodama Bosque es silencioso pero curioso. Ideal para añadir misterio y magia al ambiente." ⭐️⭐️⭐️⭐️</p>
+                    </div>
+                <div class="reseña">
+                    <p>Julian Ramirez<br>
+                        "El No-Face Místico es solitario pero fiel. Un abrazo suyo alivia cualquier tristeza." ⭐️⭐️⭐️⭐️</p>
+                </div>
+            </div>
             <p><b>cargar mas ></b></p>
         </section>
     </main>
     <!-- Pie de pagina -->
     <footer>
-        <p>----------------------Footer----------------------</p>
         <section id="contacto">
             <h3>Contactanos</h3>
-            <form>
+            <form action="https://formspree.io/f/xkgnokep" method="POST">
                 <label for="nombreCont">Nombre:
                     <input type="text" name="nombre" id="nombreCont" placeholder="Nombre y Apellido">
                 </label>
-                <br>
-                <label for="provinciaCont">Provincia:
-                    <select id="provinciaCont">
-                        <option selected>Ciudad Autonoma de Buenos Aires</option>
-                        <option>Buenos Aires</option>
-                        <option>Cordoba</option>
-                        <option>Mendoza</option>
-                    </select>
-                </label>
-                <br>
-                <label for="emailCont">Email de contacto:
+                <label for="emailCont">Correo electronico:
                     <input type="email" name="email" id="emailCont" placeholder="name.apellido@provider.com">
                 </label>
-                <input type="submit" value="Enviar">
+                <label for="mensaje">Mensaje:<br>
+                    <textarea name="mensaje" id="mensaje"></textarea>
+                </label>
+                <!--
+                <label for="provinciaCont">Provincia:
+                    <select id="provinciaCont">
+                        <option value="CABA"selected>Ciudad Autonoma de Buenos Aires</option>
+                        <option value="Buenos Aired">Buenos Aires</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="Mendoza">Mendoza</option>
+                    </select>
+                </label>
+                -->
 
+                <input type="submit" value="Enviar" id="submit">
             </form>
             <p>Creado por: Adrian Matto</p>
         </section>
