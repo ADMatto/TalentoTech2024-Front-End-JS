@@ -34,6 +34,7 @@
             <ul class="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
+                <li><a href="#carrito-compras">Carrito de compras</a></li>
                 <li><a href="#reseñas">Reseñas</a></li>
                 <li><a href="#contacto">Contactanos</a></li>
             </ul>
@@ -61,97 +62,23 @@
         </section>
         <section id="productos">
             <h2>Productos</h2>
-            <div class="productos">
-                <div class="producto">
-                    <h3>Peluche Totoro gris</h3>
-                    <img data-src="totoro1.jpg">
-                    <p class="sku">sku: t01</p>
-                    <p class="precio">Precio: $15.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Totoro celeste</h3>
-                    <img data-src="totoro2.jpg">
-                    <p class="sku">sku: t02</p>
-                    <p class="precio">Precio: $13.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Totoro blanco</h3>
-                    <img data-src="totoro3.jpg">
-                    <p class="sku">sku: t03</p>
-                    <p class="precio">Precio: $12.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Gato de Kiki's Delivery Service</h3>
-                    <img data-src="kiki1.jpg">
-                    <p class="sku">sku: k01</p>
-                    <p class="precio">Precio: $12.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Gatobus de Totoro</h3>
-                    <img data-src="buscat1.jpg">
-                    <p class="sku">sku: t04</p>
-                    <p class="precio">Precio: $12.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Faceless de Viaje de Chihiro</h3>
-                    <img data-src="faceless1.jpg">
-                    <p class="sku">sku: c01</p>
-                    <p class="precio">Precio: $12.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Calcifer de Castillo Vagabundo</h3>
-                    <img data-src="calsifer1.jpg">
-                    <p class="sku">sku: h01</p>
-                    <p class="precio">Precio: $12.000</p>
-                </div>
-                <div class="producto">
-                    <h3>Peluche Ratita de Viaje de Chihiro</h3>
-                    <img data-src="chihiro2.jpg">
-                    <p class="sku">sku: c02</p>
-                    <p class="precio">Precio: $17.000</p>
-                </div>
+            <div id="productos-grid" class="grid-container">
             </div>
+        </section>
+        <section id="carrito-compras">
+            <h2>Carrito de compras</h2>
+            <ul id="lista-carrito">
+                <li>El carrito se encuentra vacio</li>
+            </ul>
+            <p>Total a pagar: $<span id=total-carrito>0</span></span></p>
+            <button id="pagar">Ir a pagar</button>
         </section>
         <section id="reseñas">
             <h3>Reseñas</h3>
-            <p>52 reseñas</p>
-            <img data-src="review.png" height="20">
-            <div class="grid-container">
-                <div class="reseña">
-                    <p>Florencia Sanches:<br>
-                        "Todo muy cute!! quiero todo!!" ⭐️⭐️⭐️⭐️⭐️</p>
-                </div>
-                <div class="reseña">
-                    <p>Juan Perez:<br>
-                        "Super recomendado 10/10!" ⭐️⭐️⭐️⭐️⭐️</p>
-                </div>
-                <div class="reseña">
-                    <p>Maria Levis:<br>
-                        "Me llego el peluche de totoro y supero mis espectativas!" ⭐️⭐️⭐️⭐️⭐️</p>
-                </div class="reseña">
-                <div class="reseña">
-                    <p>Alejandro Rodriguez<br>
-                    "El Totoro Abrazable es perfecto compañero de siestas y secretos. Suaves y reconfortantes abrazos garantizados." ⭐️⭐️⭐️⭐️⭐️
-                    </p>
-                </div>
-                <div class="reseña">
-                    <p>Julio Rondan<br>
-                        "El Calcifer Llamita Vivaz se siente el calorcito en tus manos, chispeante y siempre animado. ¡Un encanto único!" ⭐️⭐️⭐️⭐️⭐️</p>
-                </div>
-                <div class="reseña">
-                    <p>Gabriel Burgos<br>
-                        "El Gatobus Aventura listo para cualquier viaje imaginario. Su carita es pura alegría." ⭐️⭐️⭐️⭐️⭐️</p>
-                </div>
-                <div class="reseña">
-                    <p>David Arganaraz<br>
-                        "El Kodama Bosque es silencioso pero curioso. Ideal para añadir misterio y magia al ambiente." ⭐️⭐️⭐️⭐️</p>
-                    </div>
-                <div class="reseña">
-                    <p>Julian Ramirez<br>
-                        "El No-Face Místico es solitario pero fiel. Un abrazo suyo alivia cualquier tristeza." ⭐️⭐️⭐️⭐️</p>
-                </div>
+            <p id="cantidad-resenas"></p>
+            <p id="cantidad-estrellas"></p>
+            <div id="resenas-grid" class="grid-container">
             </div>
-            <p><b>cargar mas ></b></p>
         </section>
     </main>
     <!-- Pie de pagina -->
@@ -168,17 +95,6 @@
                 <label for="mensaje">Mensaje:<br>
                     <textarea name="mensaje" id="mensaje"></textarea>
                 </label>
-                <!--
-                <label for="provinciaCont">Provincia:
-                    <select id="provinciaCont">
-                        <option value="CABA"selected>Ciudad Autonoma de Buenos Aires</option>
-                        <option value="Buenos Aired">Buenos Aires</option>
-                        <option value="Cordoba">Cordoba</option>
-                        <option value="Mendoza">Mendoza</option>
-                    </select>
-                </label>
-                -->
-
                 <input type="submit" value="Enviar" id="submit">
             </form>
             <p>Creado por: Adrian Matto</p>
